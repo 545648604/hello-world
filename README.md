@@ -1,5 +1,3 @@
 # hello-world
-this is my first github repository
-to use code to sign up in m.jd.com
-
+this is for summiting my sharecode !!!
 And see you later !
