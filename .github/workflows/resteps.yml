@@ -25,5 +25,8 @@ jobs:
       run: |
         # stop the build if there are Python syntax errors or undefined names
         python resteps.py
+      env:
+        username: ${{secrets.username}}
+        password: ${{secrets.password}}
 
 
