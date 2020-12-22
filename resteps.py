@@ -14,5 +14,5 @@ murl = "https://sc.ftqq.com/SCU131060T694c69e64cf069c6246074d14eb8aab95fc3a05dcd
 text = "小米运动步数修改"
 desp = "修改成功，步数修改为:" + str(step)
 uurl = murl+text+"&desp="+desp
-message = requests.get(murl,timeout=30)
+message = requests.get(uurl,timeout=30)
 print(message)
