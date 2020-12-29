@@ -24,6 +24,7 @@ jobs:
     - name: XMLY
       env:
         XMLY_SPEED_COOKIE: ${{secrets.XMLY_SPEED_COOKIE}}
+        SCKEY: ${{secrets.SCKEY}}
       run: |
         # stop the build if there are Python syntax errors or undefined names
         python xmly_speed.py
