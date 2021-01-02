@@ -23,6 +23,7 @@ urls = ["http://api.turinglabs.net/api/v1/jd/ddfactory/create/P04z54XCjVWnYaS5m9
 n=1
 for url in urls:
         res = requests.get(url,timeout=30)
+        print(n)
         print(res.text)
         n=n+1
         time.sleep(1)
