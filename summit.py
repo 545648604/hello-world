@@ -17,21 +17,12 @@ urls = ["http://api.turinglabs.net/api/v1/jd/ddfactory/create/P04z54XCjVWnYaS5m9
         "https://code.chiang.fun/api/v1/jd/jdzz/create/AUWE5mKuTzTULWWeqj3wekQ",
         "https://code.chiang.fun/api/v1/jd/jdzz/create/AUWE5-ufjpWpNQiqylz42",
         "http://api.turinglabs.net/api/v1/jd/jxfactory/create/u8PgQuKCPoPXQiXXuEOv5Q==/"]
-headers = {"User-Agent":"Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.67 Mobile Safari/537.36 Edg/87.0.664.47"}
-existed = "existed"
-success = "200"
+#headers = {"User-Agent":"Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.67 Mobile Safari/537.36 Edg/87.0.664.47"}
+#existed = "existed"
+#success = "200"
 n=1
 for url in urls:
-    for i in range(5):
         res = requests.get(url,headers=headers,timeout=30)
-        text = res.text
-        if success in text:
-            print(n)
-            print('success')
-            break
-        if existed in text:
-            print(n)
-            print(existed)
-            break
-    time.sleep(1)
-    n = n+1
+        printf(res.text)
+        n=n+1
+        time.sleep(1)
