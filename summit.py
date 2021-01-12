@@ -1,6 +1,8 @@
 import requests
 import time
 urls = ["http://api.turinglabs.net/api/v1/jd/ddfactory/create/P04z54XCjVWnYaS5m9cZ2f-3nxKlrAmYQV3xz4/",
+        "https://github.com/Jankinsu/J_D_auto/runs/1688536579?check_suite_focus=true",
+        "https://code.chiang.fun/api/v1/jd/jdcash/create/eU9YCabBDqNjuySfgTFv/",
         "http://api.turinglabs.net/api/v1/jd/ddfactory/create/P04z54XCjVWnYaS5m9cZwWyrhQV0GEflA8j8g/",
         "http://api.turinglabs.net/api/v1/jd/ddfactory/create/P04z54XCjVWnYaS5m9cZ2epjH0YlHbJaWzu2ZY/",
         "http://api.turinglabs.net/api/v1/jd/bean/create/4npkonnsy7xi3smpxocizkqtluyfcjgmiywfw5a/",
