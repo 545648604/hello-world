@@ -1,6 +1,7 @@
 import requests
 import json
-TOK = os.environ[TOK]
+import os
+TOK = os.environ["TOK"]
 word_url = "https://v1.hitokoto.cn/?c=d"
 r = requests.get(word_url)
 print(r.status_code)
