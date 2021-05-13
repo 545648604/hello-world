@@ -3,7 +3,7 @@ import json
 import os
 TOK = os.environ["TOK"]
 TOK1 = os.environ["TOK1"]
-word_url = "https://v1.hitokoto.cn/?c=d"
+word_url = "https://v1.hitokoto.cn/?c=i"
 r = requests.get(word_url)
 print(r.status_code)
 words = json.loads(r.text)
