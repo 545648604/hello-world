@@ -20,8 +20,8 @@ jobs:
         pip install requests
     - name: bdwpqd
       env:
+        BAIDUHD: ${{secrets.BAIDUHD}}
         TOK: ${{secrets.TOK}}
-        TOK1: ${{secrets.TOK1}}
       run: |
         # stop the build if there are Python syntax errors or undefined names
         python bdwpqd.py
