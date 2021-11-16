@@ -1,4 +1,4 @@
-name: YIYAN
+name: BDWP
 
 on:
   schedule:
@@ -18,10 +18,10 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install requests
-    - name: yiyan
+    - name: bdwpqd
       env:
         TOK: ${{secrets.TOK}}
         TOK1: ${{secrets.TOK1}}
       run: |
         # stop the build if there are Python syntax errors or undefined names
-        python yiyan.py
+        python bdwpqd.py
