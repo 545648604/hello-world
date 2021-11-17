@@ -6,7 +6,7 @@ import os
 
 _t = str(int(time.time()))
 headers = os.environ["BAIDUHD"]
-headers = headers.json()
+headers = eval(headers)
 TOK = os.environ["TOK"]
 url_qd = 'https://pan.baidu.com/pmall/points/signin?c=8D10C29AACC9B74110170EA14822683F%7C0&z=T3z47Bw7wplxR2NRq2T1P1N8Bz-1XcVyRYjCtSHdIH0lSU3g1AANWrWiNSGolo9he86ru1-Lv5M-holrAxdUJIw&app=android&ver=11.13.8&ua=netdisk%3B11.13.8%3Bmi%2B10%3Bandroid-android%3B11%3Bjsbridge4.4.0%3Bjointbridge%3B1.1.0%3B&channel=android&version=11.13.8&time=1632111532&devuid=8D10C29AACC9B74110170EA14822683F%7C0&rand=2138b7c8eb86addac823f6bc07464c4e4c621a41&ev=sign&hjs=1&aid=5820&clienttype=1&_t=' + _t
 url_list = 'https://pan.baidu.com/pmall/points/signinlist?from=pointscenter&_t=' + _t
