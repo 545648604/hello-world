@@ -20,7 +20,7 @@ jobs:
         pip install requests
     - name: baidu
       env:
-#        TOK: ${{secrets.TOK}}
+        TOK: ${{secrets.TOK}}
 #        TOK1: ${{secrets.TOK1}}
       run: |
         # stop the build if there are Python syntax errors or undefined names
